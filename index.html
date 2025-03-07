@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Case Study: Accessible Components- Dropdown Menus</title>
+    <title>Case Study: Personas and Storyboarding</title>
     <!-- CSS Style Sheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -11,26 +11,17 @@
   <body>
     <div class="container">
       <div class="heading">
+        <div class ="screen">
         <h1>
           <div class="case_study_text">Case Study:</div>
 
-          Redesigning the Dropdown Menu
+          Microwave Users
         </h1>
         <div class="dropdown">
-          <p>Incorporating accessibility into the redesign of the dropdown menu in a case study</p>
-
-          <select class="dropdown-btn">
-            <option selected disabled>Purpose</option>
-            <option>
-              Exploring the accessibility and usability of dropdown menus
-            </option>
-            <option>
-              Exploring the different states, inputs, and outputs of dropdown
-              menus
-            </option>
-            <option>Proposing a revised dropdown menu component</option>
-          </select>
+          <p>Understanding User Needs and Journey through Personas
+          </p>
         </div>
+</div>
       </div>
       <br />
 
@@ -44,254 +35,227 @@
         </div>
         <div>
           <h3>Timeline:</h3>
-          <p>1 Week</p>
+          <p>2 Weeks</p>
         </div>
         <div>
           <h3>Project Type:</h3>
-          <p>Case study on accessible components.</p>
+          <p>Case study on personas and storyboarding</p>
         </div>
       </div>
       <hr />
-      <div class="tabs">
-        <div class="tab active" onclick="showContent('context')">CONTEXT</div>
-        <div class="tab" onclick="showContent('research')">RESEARCH</div>
-        <div class="tab" onclick="showContent('process')">PROCESS</div>
-        <div class="tab" onclick="showContent('solution')">SOLUTION</div>
-        <div class="tab" onclick="showContent('learnings')">LEARNINGS</div>
-      </div>
+      
+    <div class ="content-wrapper">
+      <div class="sidebar-menu">
+        <a class="sidebar-button active" href="#context">CONTEXT</a>
+        <a class="sidebar-button" href="#research">RESEARCH</a>
+        <a class="sidebar-button" href="#process">PROCESS</a>
+        <a class="sidebar-button" href="#solution">SOLUTION</a>
+        <a class="sidebar-button" href="#learnings">LEARNINGS</a>
+    </div>
+
+    <div class ="content-section">
       <div id="context" class="content active">
         <h2>Context</h2>
-        <hr />
        
         <p>
-          Dropdown menus are a common UI componenet used across various types of
-          applications, allowing users to display and choose from a list of
-          options triggered from a single click or hovering over a component. 
-          In this project, I will analyze multiple examples of the dropdown menu from different applications, examining the component's interactions with user input.
-          I will then answer the question of how we can create a more 
-          <select class="dropdown-bt2">
-            <option>
-              accessible
-            </option>
-            <option>
-              efficient
-            </option>
-            <option>learnable</option>
-            <option>memorable</option>
-          </select>
-          dropdown menu.
-          
+          Microwaves are an accessible, public interface that users integrate into their daily lives. In my residence hall,
+          there is one large microwave used by approximately 40 people. The microwave is known to be a bit sophisticated, including
+          multiple buttons with confusing language, a dial, and a small screen used to keep track of time in a busy lounge used for studying, cooking, and socializing.
+          The question for this project and the basis for the contextual inquiry performed is what do people think about this microwave? How do they use it? Does it meet expectations?
+          Through this project, I will be observing and interviewing three users, creating two personas and one storyboard of an entire user journey to fully encapsulate the experience of a microwave user.
         </p>
        
+        <p><b>Annotated Sketch of the Microwave</p> <p>(Focus of the Study)</b></p>
+        <img
+        class="microwave_annotated"
+        src="assets/microwave_annotated.png"
+        style="width: 75%;"
+      />
+      <p>The microwave's interface includes 5 major manual setting buttons, 4 buttons related to sensor cooking (for specific meal types), 3 timer/clock related buttons, and 3 start/power/off buttons. The interface also includes one screen that shows the time or setting information, and a dial that can be turned as well as clicked.</p>
+      <p>The interface allows users to quickly heat food by interacting with a combination of buttons and a dial. It also allows users to keep track of the time and current setting information on the screen. The goal is to make cooking time adjustments intutive. </p>
       </div>
       <div id="research" class="content">
         <h2>Research</h2>
-        <hr />
         
         <p>
-          In this project, I analyzed three dropdown menus utilized in different
-          contexts with different user inputs and outputs:
+          In this project, I observed and interviewed three people using the microwave in my residential hall.
+        </p>
+        <p><b>
+          Key Observations:</b>
+        </p>
+        <p>Each of the users used different paths to start the microwave. 
+          One relied on the clicking the "Express" button multiple times.
+          Another manually sets a time with the "Time Cook" button and the dial.
+          The third user uses the "Reheat" button, waiting for the microwave to beep and then checked their food before selecting the "Reheat" button again.
+         Two of the users opened the microwave before the finalizing beep. Most of the users would check their food partway through heating
+          and adjust by either taking the food out and selecting their preferred button again to add more time. 
+          Most the users had set buttons/dials to press (they did not stray from their precise buttons), 
+          but one of the users tried one path to set timing through the dial. 
+          Once they saw this path failed, they tried another different set of buttons that did end up starting the heating process.
+        </p>
+        <p><b>
+          Interview Summary:</b>
         </p>
         <div class="contexts_list">
           <div class="context">
             <span class="number">01</span>
             <div class="context-content">
-              <h2 class="title">Brown University Website</h2>
-            
-              <p class="description">
-                <div class="slideshow" style="width: 100%">
-                  <img
-                    class="slide_brown"
-                    src="assets/brown_collapsed.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  <img
-                    class="slide_brown"
-                    src="assets/brown_expanded.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  <img
-                    class="slide_brown"
-                    src="assets/brown_option_hover.png"
-                    style="width: 100%; margin: auto"
-                  />
-                </div>
-                
-              </p>
+              <h2 class="title">How did you learn to use the microwave?</h2>
               
             </div>
           </div>
           <div class="context">
             <span class="number">02</span>
             <div class="context-content">
-              <h2 class="title">Visual Studio Code Desktop App</h2>
-              <p class="description">
-                <div class="slideshow" style="width: 100%">
-                  <img
-                    class="slide_ikea"
-                    src="assets/vscode_collapsed.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  <img
-                    class="slide_ikea"
-                    src="assets/vscode_hover.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  <img
-                    class="slide_ikea"
-                    src="assets/vscode_expand.png"
-                   style="width: 100%; margin: auto"
-                  />
-                  </div>
-              </p>
+              <h2 class="title">Is this microwave similar to others you've used?</h2>
+              
             </div>
           </div>
           <div class="context">
             <span class="number">03</span>
             <div class="context-content">
-              <h2 class="title">
-                The College Hill Independent Website
-              </h2>
-              <p class="description">
-                <div class="slideshow" style="width: 100%">
-                  <img
-                    class="slide_indy"
-                    src="assets/indy_collapsed.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  <img
-                    class="slide_indy"
-                    src="assets/indy_expanded.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  <img
-                    class="slide_indy"
-                    src="assets/indy_option_hover.png"
-                    style="width: 100%; margin: auto"
-                  />
-                  </div>
-              </p>
+              <h2 class="title">Do you have a routine for using this microwave? Or Do you change the settings depending on certain circumstances (i.e. what is being heated)?</h2>
             </div>
           </div>
-        </div>
 
-        <br>
-          <b>Examaning user interactions inputs and outputs of the dropdown menus:</b>
-          <br>
-          <br>
-          <img
-                    src="assets/input.png"
-                    style="width: 80%; margin: auto"
-                  />
-                  <img
-                    src="assets/output.png"
-                    style="width: 80%; margin: auto"
-                  />
+          <div class="context">
+            <span class="number">04</span>
+            <div class="context-content">
+              <h2 class="title">                Is the literal screen on the microwave useful to you? Are you open to/ have you experimented with the other buttons on the microwave?              </h2>
+             
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">05</span>
+            <div class="context-content">
+              <h2 class="title">               Are you open to/ have you experimented with the other buttons on the microwave?              </h2>
+             
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">06</span>
+            <div class="context-content">
+              <h2 class="title">
+                What usually prompts you to use this microwave and not another one? Do you ever avoid using the microwave?
+              </h2>
+            
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">07</span>
+            <div class="context-content">
+              <h2 class="title">
+                Do you get frustrated using the microwave at all?
+              </h2>
+            
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">08</span>
+            <div class="context-content">
+              <h2 class="title">
+                Would you read if there were instructions included?
+              </h2>
+            
+            </div>
+          </div>
+          <div class="context">
+            <span class="number">09</span>
+            <div class="context-content">
+              <h2 class="title">
+                If you could change one thing about this microwave, what would it be?
+              </h2>
+            
+            </div>
+          </div>
+       
+          <div class="context">
+            <span class="number">10</span>
+            <div class="context-content">
+              <h2 class="title">
+Open-ended Feedback: Is there anything else you would like me to know about your experience with the microwave?             </h2>
+</div>
+        
+</div>
+            
+        </div>
+        <p><b>Summary of User Responses:</b></p>
+        <p>Overall, the users all have routines that they generally stuck to, no matter what they were microwaving. Each of the users has different paths to getting the microwave to start. Most of the users found the dial misleading, finding it unintuitive and suggesting it be replaced with a number pad, similar to microwaves that they've interacted with in the past.
+          Some of the users hesitated to experiment with additional features because they prioritized quick, predictable results, but one of the users was prone to experimenting by trial and error, though they always stick with their routine path since they could almost never get anything done with experimenting. Users also mentioned coming back multiple times to restart the reheating process of their food because they found the first reheating wasn't enough. The first time using the microwave showed that the 
+          experience has never been intutive- most of the users had to ask nearby friends for help.
+          Overall, most of the users didn't engage with the advanced features, like sensor cooking for particular meal types or power/size adjustments. They stuck with what they knew, either because they didn't want to try anything new or because another path had failed. 
+          
+        </p>
+          
         
       </div>
       <div id="process" class="content">
         <h2>Process</h2>
-        <hr />
         <p>
-          To fully visualize the interactions and accessibility aspects of the
-          dropdown menu component, I created state models to examine how users
-          interact with the menu within the context of The Indy/The College Hill Independent website (01). I
-          create two state models to focus on both mouse and keyboard users.
+          To fully represent the spectrum of users that use and may use the microwave, I constructed two personas:
         </p>
-        <div class="indy" style="width: 100%; display: flex; justify-content: center; gap: 10px;">
-          <img
-            class="model_indy"
-            src="assets/model_indy_mouse.png"
-            style="width: 50%;"
+        <div>
+        <img
+            class="result"
+            src="assets/Untitled_Artwork 1.png"
+            style="width: 49%; float:left; padding-right: 1px;"
           />
           <img
-            class="model_indy"
-            src="assets/model_indy_keyboard.png"
-            style="width: 50%;"
+            class="result"
+            src="assets/Untitled_Artwork 2.png"
+            style="width: 49%;float:right;"
           />
         </div>
-        
+  
+        <div>
+        <p><b>Persona 1: Chill Chris likes to press buttons and see what happens. </b> </p>
+        <p>Chris likes to experiment, but, because the microwave lacks clear labeling, he can't figure out how to understand settings other than the one he resorts to. Chris can't adjust heating settings easily and a lot of times ends up with too cold or too hot food.</p>
+        <p>Chris represents user groups that like to experiment with the microwave interface. He is a casual user, who represents those that don't necessarily priotize efficiency and isn't afraid to press new buttons. Even then, as all the users from my interviews, he resorts to a single routine when he can't figure out a new one.</p>
+        <p><b>Persona 2: Fast Frankie likes to keep it simple and get her food quick. </b></p>
+        <p>Frankie finds many problems with the microwave's interface- starting with the unnessary amount of buttons she would need to use to accurately heat up a specific meal type. She gets annoyed looking at the complexity of the microwave, so will always absent-mindedly resort to her one-button route, which usually requires multiple tries to get her food hot enough.</p>
+      <p>Frankie represents user who want quick and easy ways to heat up their food without the need for extra features. Frankie and them stick to what they know and avoid complexity when they can.</p>
+   
+    </div>
       </div>
       <div id="solution" class="content">
         <h2>Solution</h2>
-        <hr />
-        <p><b>The final step of the project is the solution. I construct my revised state models for a dropdown menu component for both mouse and keyboard users.</b></p>
+        <p><b>The final step of the project is the creation of a storyboard for showcasing Chill Chris's complete journey using the microwave's interface. 
         
-        <div class="revised" style="width: 100%; display: flex; justify-content: center; gap: 10px;">
-          <img
-            class="model_revised"
-            src="assets/model_revised_mouse.png"
-            style="width: 50%;"
-          />
-          <img
-            class="model_revised"
-            src="assets/model_revised_keyboard.png"
-            style="width: 50%;"
-          />
-        </div>
-        <p><b>Using the state models and the research conducted, I use Figma to construct a revised component within the context of the Independent College Hill website. Two annotated designs were created:</b></p>
+   
 
-        <p><b>Initial state (before user interaction):</b></p>
 
+          <div>
         <img
             class="result"
-            src="assets/results1.png"
-            style="width: 100%;"
+            src="assets/Untitled_Artwork.png"
+            style="width: 75%;"
           />
-          <p><b>Active state (expanded dropdown menu):</b></p>
-
-          <img
-            class="result"
-            src="assets/results2.png"
-            style="width: 100%;"
-          />
-          <br>
-          <br>
-          <b>Final Zoomed-in Revisions (Designed in Figma):</b>
-          <hr>
-          <div class="revised" style="width: 100%; display: flex; justify-content: center; gap: 10px;">
-            <img
-              class="model_revised"
-              src="assets/results3.png"
-              style="width: 50%;"
-            />
-            <img
-              class="model_revised"
-              src="assets/results4.png"
-              style="width: 50%;"
-            />
         </div>
       </div>
-      <div id="learnings" class="content" style="text-align:left">
+      <div id="learnings" class="content">
         <h2>Learnings</h2>
-        <hr />
         <p>
-          <b>Observations from Original Components
+          <b>This project built my skills in understanding user needs and experiences based on empirical obersvations through personas and storyboarding. 
+          Through clear visualizations of the user interactions with the interface, I am better able to identify the shortcomings and benefits of this particular microwave, as well as the goals and characteristics of those that use it.
           </b>
-          <ul><li>The <u>Brown University</u> dropdown menu component did well in terms of accessibility across the input forms, allowing for multiple ways to expand and collapse the dropdown menu for both keyboard and mouse pad users. I implemented this similarly in my design by allowing keyboard and/or mousepad interactions to be used to access the menu in similar ways.
-          </li>
-        <li>The <u>Visual Studio Code</u> app design hit similar points in accessibility focused on click-based interaction over hover-based. I decided to implement this into my design on the dropdown menu. I changed the College Hill Independent dropdown menu to be click-based interactions only, where users had to click on the section heading to expand the menu. 
-        </li>
-      <li>Click-based input has a positive impact on users with impairments as people who use only keyboards, touchscreens, or assistive devices might not have access to the hover-based interactions.
-      </li>
-    <li>Keeping in mind the observations from the <u>College Hill Independent</u> and the other two components, I think mouse users are the most commonly prioritized in the process of creating components. This impacts the user experience, particularly for non-mouse users, as inputs and outputs for those users might not be taken into consideration in the design or development as much. This is what seems to have happened in the College Hill Independent website, where the keyboard accessibility was not fully developed when compared to mouse accessibility.
-    </li>
-  <li>Inaccessibility in the input aspect for the <u>College Hill Independent</u> component can negatively impact users if they don’t have access to their mousepad and need to use the dropdown menu. If the dropdown menu is not accessible via keyboard, users with motor impairments or broken touchpads might be unable to navigate through.
-  </li>
-</ul></p>
-<p><b>Accessibility Considerations in Final Redesign
-</b>
-<ul><li>Relying on hover-based interactions can be difficult to use for populations with motor impairments as well as for users with screen readers and thus, I considered this in my design. 
-</li>
-<li>One accessibility consideration not completely addressed by the components I observed that I ended up accounting for was the two-column menu size instead of a longer one so that users wouldn’t need to find a way to scroll down to see all the options. 
-</li>
-<li>My design solves a “mismatch” by implementing multiple ways to expand the menu instead of focusing on the implementation of a “default” that might not be accessible for keyboard or screen reader users. 
-</li></ul></p>
-      </div>
+        </p>
+          </div>
     </div>
-    
+    </div>
+  </div>
+  <button class="microwave_button" onclick="playBeep()">DONE!</button>
+
+  </body>
+  <!-- Microwave Beep Sound -->
+  <audio id="microwave-beep">
+    <source src="assets/microwave-sound-63730.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
     <!-- Javascript for automatic slideshows-->
     <script>
+      
       function carousel(slideshowClass) {
         var slides = document.getElementsByClassName(slideshowClass);
         var index = 0;
@@ -317,7 +281,7 @@
 
       function showContent(section) {
         let contents = document.querySelectorAll(".content");
-        let tabs = document.querySelectorAll(".tab");
+        let tabs = document.querySelectorAll(".sidebar-button");
         contents.forEach((content) => content.classList.remove("active"));
         tabs.forEach((tab) => tab.classList.remove("active"));
         document.getElementById(section).classList.add("active");
@@ -336,6 +300,16 @@
         showSlides(slideIndex + n);
       }
       showSlides(slideIndex);
+
+      function playBeep() {
+        const button = document.querySelector('.microwave_button');
+  button.textContent = "YOUR FOOD IS READY!";
+          let beepSound = document.getElementById("microwave-beep");
+            beepSound.currentTime = 19; // Start 20 seconds into the audio (last 10 seconds of the 30s clip)
+            beepSound.play(); // Play the audio
+        }
+    
+
 
     </script>
   </body>
